@@ -874,7 +874,7 @@
                                                                 <h1
                                                                     class="v-text-align v-font-size"
                                                                     style="margin: 0px; color: #343a40; line-height: 140%; text-align: center; word-wrap: break-word; font-size: 22px; font-weight: 400;"
-                                                                ><a href="https://beltoneholding.com"><img src="./images/logo.png" alt="Logo" style="max-width: 300px; height: auto;"></a></h1>
+                                                                ><a href="https://beltoneholding.com"><img src="./images/logo.png" alt="Logo" style="height: 96px; width: auto; @media (min-width: 768px) { height: 128px; }"></a></h1>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -1535,7 +1535,13 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-
+                                                            <style>
+                                                                @media only screen and (max-width: 620px) {
+                                                                    #u_content_text_10 {
+                                                                        margin-top: 40px !important;
+                                                                    }
+                                                                }
+                                                            </style>
                                                             <table
                                                                 id="u_content_text_10"
                                                                 role="presentation"
@@ -1721,9 +1727,16 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
+                                                            <style>
+                                                                @media only screen and (max-width: 620px) {
+                                                                    #u_content_text_4 {
+                                                                        margin-top: 40px !important;
+                                                                    }
+                                                                }
+                                                            </style>
                                                             <table
                                                                 id="u_content_text_4"
-                                                                role="presentation"
+                                                                role="presentation" 
                                                                 style="font-family:'Raleway',sans-serif;"
                                                                 cellpadding="0"
                                                                 cellspacing="0"
@@ -1906,7 +1919,7 @@
             align-items: center;
             gap: 32px;
             padding: 20px;
-            background: linear-gradient(to right, transparent 30%, #414042 30% 70%, transparent 70%);
+            background: #414042;
         }
 
         .footer-logo {
@@ -1958,6 +1971,12 @@
             font-family: 'Raleway', sans-serif;
             font-size: 14px;
             padding-bottom: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-container {
+                background: linear-gradient(to right, transparent 30%, #414042 30% 70%, transparent 70%);
+            }
         }
     </style>
 
